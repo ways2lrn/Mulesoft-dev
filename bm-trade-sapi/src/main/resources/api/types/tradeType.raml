@@ -1,0 +1,35 @@
+#%RAML 1.0 DataType
+type: object
+properties:
+  symbol:
+    type: string
+    required: true
+    example:
+      "TSLA"
+  idex:
+    type: string
+    required: true
+    example: 
+      "NASDAQ"
+  operation:
+    type: string
+    required: true
+    example: 
+      "sell"
+  quantity:
+    type: integer
+    required: true
+    example:
+        80
+  price:
+    type: number
+    required: true
+    example: 
+      600.20
+  type:
+    type: string
+    required: true
+    example:
+        "equity"
+      
+      

@@ -1,0 +1,41 @@
+#%RAML 1.0
+title: BM-trade-sapi
+types:  
+  tradeType: !include types/tradeType.raml
+/trade:
+  post:
+    headers:
+      consumerId:
+        type: string 
+        required: true       
+        description: Id of requester
+        example: "1234" 
+    body:
+      application/json:
+        type: tradeType               
+        example: !include examples/tradeReqEg.json
+    responses:
+      201:
+        body:
+          application/json:
+            example: !include examples/tradeRespEg.json
+  get:
+    headers:
+      consumerId:
+        type: string 
+        required: true       
+        description: Id of requester
+        example: "1234" 
+    responses:
+      200:
+        body:
+          application/json:
+            example: !include examples/tradeReqEg.json
+
+    
+            
+                      
+          
+      
+              
+    

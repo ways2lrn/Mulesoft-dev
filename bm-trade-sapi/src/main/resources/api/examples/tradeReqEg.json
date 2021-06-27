@@ -1,0 +1,8 @@
+    {
+    "symbol":"TSLA",
+    "idex":"NASDAQ",
+    "operation":"sell",
+    "quantity": 80,
+    "price":600,
+    "type":"Amare"
+  }
